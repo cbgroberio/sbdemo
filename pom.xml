@@ -16,6 +16,12 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
+		<dependency-check-maven.version>6.1.1</dependency-check-maven.version>
+		<sonar.dependencyCheck.htmlReportPath>./target/dependency-check-report.html</sonar.dependencyCheck.htmlReportPath>
+		<sonar.dependencyCheck.jsonReportPath>./target/dependency-check-report.json</sonar.dependencyCheck.jsonReportPath>
+		<sonar.dependencyCheck.xmlReportPath>./target/dependency-check-report.xml</sonar.dependencyCheck.xmlReportPath>
+		<sonar.dependencyCheck.summarize>true</sonar.dependencyCheck.summarize>
+		<sonar.host.url>http://localhost:9000/</sonar.host.url>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -73,6 +79,11 @@
 			         <format>xml</format>
 			      </formats>
 			   </configuration>
+			</plugin>
+			<plugin>
+			   	<groupId>org.sonarsource.scanner.maven</groupId>
+			   	<artifactId>sonar-maven-plugin</artifactId>
+		   		<version>3.8.0.2131</version>
 			</plugin>
 		</plugins>
 	</build>
