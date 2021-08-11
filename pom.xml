@@ -65,14 +65,7 @@
 			<plugin>
 			   <groupId>org.owasp</groupId>
 			   <artifactId>dependency-check-maven</artifactId>
-			   <version>6.0.0</version>
-			   <configuration>
-			      <formats>
-			         <format>html</format>
-			         <format>json</format>
-			         <format>xml</format>
-			      </formats>
-			   </configuration>
+			   <version>5.0.0</version>
 			</plugin>
 		</plugins>
 	</build>
